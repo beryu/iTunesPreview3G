@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;"/>
+		<script type="text/javascript" src="lib/jquery/jquery-1.3.2.min.js"></script>
+		<script type="text/javascript" src="js/model/GlobalVariable.js"></script>
+		<script type="text/javascript" src="js/action/Search.js"></script>
+		<script type="text/javascript" src="js/action/ShowItem.js"></script>
+		<script type="text/javascript" src="js/action/Callback.js"></script>
+		<script type="text/javascript" src="js/view/Mediator.js"></script>
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="apple-touch-icon" href="img/icon.png" /> 
+		<title>iTunes Preview 3G</title>
+	</head>
+	<body>
+		<form id="searchForm" action="#">
+			<h1><img src="img/logo.png" alt="iTunes Preview 3G"/></h1>
+			<input id="keyword" type="search"/>
+			<input id="searchBtn" type="submit" value="Search"/>
+		</form>
+		<table id="result" cellspacing="0">
+			<tr id="intro">
+				<td>
+					<img src="img/arrowTop.png" alt="↑" id="introArrow"/>
+					<div id="introBox">
+						アーティスト名や曲名を入力して検索すると、楽曲を試聴できます！
+					</div>
+				</td>
+			</tr>
+		</table>
+		<footer>
+			<small>
+				<img src="img/producedby.png" alt="Powered by"/>
+				&nbsp;<a href="http://tri-ta.com"><img src="img/tri_ta.png" alt="とり〜た"/></a>
+				&nbsp;<img src="img/comma.png" alt=","/>
+				&nbsp;<a href="http://blk.jp"><img src="img/blk.png" alt="blk"/></a>
+			</small>
+		</footer>
+		<script type="text/javascript">
+			var _gaq = _gaq || [];
+			_gaq.push(['_setAccount', 'UA-17052719-1']);
+			_gaq.push(['_trackPageview']);
+			
+			(function() {
+				var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+				ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			})();
+		</script>
+	</body>
+</html>
