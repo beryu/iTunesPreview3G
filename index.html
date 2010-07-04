@@ -11,11 +11,11 @@
 		<script type="text/javascript" src="js/view/Mediator.js"></script>
 		<link rel="stylesheet" href="css/style.css">
 		<link rel="apple-touch-icon" href="img/icon.png" /> 
-		<title>iTunes Preview 3G</title>
+		<title>Music Preview 3G</title>
 	</head>
 	<body>
 		<form id="searchForm" action="#">
-			<h1><img src="img/logo.png" alt="iTunes Preview 3G"/></h1>
+			<h1><img src="img/logo.png" alt="Music Preview 3G"/></h1>
 			<input id="keyword" type="search"/>
 			<input id="searchBtn" type="submit" value="Search"/>
 		</form>
@@ -24,7 +24,8 @@
 				<td>
 					<img src="img/arrowTop.png" alt="↑" id="introArrow"/>
 					<div id="introBox">
-						アーティスト名や曲名を入力して検索すると、楽曲を試聴できます！
+						アーティスト名や曲名を入力して検索すると、楽曲を試聴できます。<br />
+						（iTunes Storeに存在しない曲は検索できません。）
 					</div>
 				</td>
 			</tr>
@@ -38,15 +39,15 @@
 			</small>
 		</footer>
 		<script type="text/javascript">
-			var _gaq = _gaq || [];
-			_gaq.push(['_setAccount', 'UA-17052719-1']);
-			_gaq.push(['_trackPageview']);
-			
-			(function() {
-				var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-				ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-			})();
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-8809253-6']);
+		  _gaq.push(['_trackPageview']);
+		
+		  (function() {
+		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  })();
 		</script>
 	</body>
 </html>
