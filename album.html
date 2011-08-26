@@ -10,21 +10,16 @@
 </head>
 <body>
 <div data-role="page" data-theme="a" id="container" class="container">
-  <div data-role="header" data-backbtn="false" id="header">
+  <div data-role="header" data-backbtn="false">
     <h1>Music Preview</h1>
   </div><!-- #header -->
   <div id="menu">
-    <a href="javascript:jump2Search()" id="menu_search" class="menu_search selected">曲を検索</a>
+    <a href="javascript:jump2Search()" id="menu_search" class="menu_search">曲を検索</a>
     <a href="javascript:jump2Bookmarks()" id="menu_bookmark" class="menu_bookmark">お気に入り</a>
   </div>
   <div data-role="content">
-    <form id="search_form" class="search_form">
-      <input type="search" name="keyword" id="keyword" class="keyword not_focused" data-theme="c" value="" onfocus="focusHandler()" onblur="itunesSearch()"/>
-    </form>
-    <br clear="all"/>
-    <div id="search_result_container" class="search_result_container" data-theme="a">
-      <div class="intro"></div>
-    </div>
+    <div id="album"></div>
+    <div id="album_result_container" class="album_result_container" data-theme="a"></div>
   </div>
   <div data-role="footer" id="footer">
     <p>&copy; <a href="http://tri-ta.com" target="_blank">tri-ta</a>, <a href="http://blk.jp" target="_blank">blk</a></p>
